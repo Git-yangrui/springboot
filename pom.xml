@@ -22,7 +22,6 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
     </parent>
 
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- 指定一下jdk的版本 ，这里我们使用jdk 1.8 ,默认是1.6 -->
@@ -50,7 +49,7 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
             <version>1.2.15</version>
         </dependency>
 
-        <!-- spring boot devtools 依赖包. -->
+              <!-- spring boot devtools 依赖包. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -58,23 +57,24 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
             <scope>true</scope>
         </dependency>
 
-
     </dependencies>
 
     <!-- 构建节点. -->
     <build>
         <plugins>
-            <!-- 在这里添加springloader plugin
+             <!--在这里添加springloader plugin-->
             <plugin>
                   <groupId>org.springframework.boot</groupId>
                   <artifactId>spring-boot-maven-plugin </artifactId>
                   <dependencies>
+
                    <dependency>
                        <groupId>org.springframework</groupId>
                        <artifactId>springloaded</artifactId>
-                       <version>1.2.4.RELEASE</version>
+                       <version>1.2.5.RELEASE</version>
                    </dependency>
                 </dependencies>
+
                 <executions>
                    <execution>
                        <goals>
@@ -86,7 +86,6 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
                    </execution>
                    </executions>
             </plugin>
-             -->
 
             <!-- 这是spring boot devtool plugin -->
             <plugin>

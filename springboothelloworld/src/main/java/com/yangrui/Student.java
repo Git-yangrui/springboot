@@ -1,11 +1,26 @@
 package com.yangrui;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
+import java.util.Date;
+
 public class Student {
 
 
     private String stuId;
 
     private String stuName;
+
+    @JSONField(format="yyyy-MM-dd")
+    private Date date;
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
     public String getStuId() {
         return stuId;
