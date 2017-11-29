@@ -2,11 +2,13 @@ package com.example.cloud.microservieconsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-public class MicroservieConsumerApplication {
+@EnableDiscoveryClient
+public class MicroservieProviderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroservieConsumerApplication.class, args);
+		SpringApplication.run(MicroservieProviderApplication.class, args);
 	}
 }

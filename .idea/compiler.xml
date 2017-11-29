@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservie-consumer-movice" />
+        <module name="microservie-consumer-ribbon" />
+        <module name="miscrservice-discoverye-ureka" />
+        <module name="miscrseviceprovideruser" />
+        <module name="springboothelloworld" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservie-consumer-movice" target="1.8" />
+      <module name="microservie-consumer-movice (1)" target="1.8" />
+      <module name="microservie-consumer-ribbon" target="1.8" />
+      <module name="microservie-parent" target="1.8" />
+      <module name="microservie-provider" target="1.8" />
+      <module name="microservieconsumermovie" target="1.8" />
+      <module name="miscrservice-discoverye-ureka" target="1.8" />
+      <module name="miscrservice-parent" target="1.8" />
+      <module name="miscrserviceprovider" target="1.8" />
+      <module name="miscrseviceprovideruser" target="1.8" />
+      <module name="springboot" target="1.8" />
+      <module name="springboothello" target="1.5" />
+      <module name="springboothelloworld" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

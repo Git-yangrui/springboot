@@ -1,0 +1,20 @@
+server:
+  port: 7901
+spring:
+   application:
+      name: miscrservice-provider-movie
+user:
+  userServicePath: http://127.0.0.1:7900/user/simple/
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://yangrui:123@localhost:8761/eureka
+#    healthcheck:
+#            enabled: true
+  instance:
+     prefer-ip-address: true
+     instance-id: ${spring.application.name}:${server.port}}
+     lease-renewal-interval-in-seconds: 10
+     lease-expiration-duration-in-seconds : 60
