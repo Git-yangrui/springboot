@@ -12,7 +12,7 @@
         <module>springboothelloworld</module>
         <module>microservie-consumer-movice</module>
         <module>miscrservice-discoverye-ureka</module>
-
+        <module>microservie-consumer-movie-feign</module>
     </modules>
 
     <!--
@@ -62,7 +62,7 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
             <version>1.2.15</version>
         </dependency>
 
-              <!-- spring boot devtools 依赖包. -->
+        <!-- spring boot devtools 依赖包. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -90,41 +90,41 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
         </dependency>
 
         <!--<dependency>-->
-            <!--<groupId></groupId>-->
-            <!--<artifactId>spring-cloud-starter-config</artifactId>-->
+        <!--<groupId></groupId>-->
+        <!--<artifactId>spring-cloud-starter-config</artifactId>-->
         <!--</dependency>-->
         <!--<dependency>-->
-            <!--<groupId></groupId>-->
-            <!--<artifactId>spring-cloud-starter-eureka</artifactId>-->
+        <!--<groupId></groupId>-->
+        <!--<artifactId>spring-cloud-starter-eureka</artifactId>-->
         <!--</dependency>-->
     </dependencies>
 
     <!-- 构建节点. -->
     <build>
         <plugins>
-             <!--在这里添加springloader plugin-->
+            <!--在这里添加springloader plugin-->
             <plugin>
-                  <groupId>org.springframework.boot</groupId>
-                  <artifactId>spring-boot-maven-plugin </artifactId>
-                  <dependencies>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <dependencies>
 
-                   <dependency>
-                       <groupId>org.springframework</groupId>
-                       <artifactId>springloaded</artifactId>
-                       <version>1.2.5.RELEASE</version>
-                   </dependency>
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>springloaded</artifactId>
+                        <version>1.2.5.RELEASE</version>
+                    </dependency>
                 </dependencies>
 
                 <executions>
-                   <execution>
-                       <goals>
-                           <goal>repackage</goal>
-                       </goals>
-                       <configuration>
-                           <classifier>exec</classifier>
-                       </configuration>
-                   </execution>
-                   </executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>exec</classifier>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
             <!-- 这是spring boot devtool plugin -->
@@ -137,11 +137,10 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
                 </configuration>
             </plugin>
 
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                </plugin>
-
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
 
 
         </plugins>
