@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$USER_HOME$/Desktop/microservie-parent" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Desktop/microservie-provider" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Desktop/microservie-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservie-consumer-movice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservie-consumer-movie-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservie-consumer-ribbon" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservie-consumer-ribbon" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservieconsumermovie" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/miscrservice-discoverye-ureka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/miscrservice-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/miscrseviceprovideruser" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/miscroservice-discoverye-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/miscrsevice-provider-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-intergration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springapplication" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboothelloworld" charset="UTF-8" />
   </component>
 </project>

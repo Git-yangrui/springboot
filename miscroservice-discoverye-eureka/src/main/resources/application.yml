@@ -6,6 +6,7 @@ security:
     password: 123
 server:
   port: 8761
+
 eureka:
   client:
     register-with-eureka: false
@@ -14,7 +15,6 @@ eureka:
        defaultZone: http://yangrui:123@localhost:8761/eureka
     healthcheck:
         enabled: true
-
   server:
     enable-self-preservation: false
 

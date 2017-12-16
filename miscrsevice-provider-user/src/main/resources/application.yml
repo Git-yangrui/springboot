@@ -19,14 +19,22 @@ logging:
      org.hibernate: INFO
      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
+#dependecy acuator
+#eureka:
+#    client:
+#
+#    instance:
+#        lease-expiration-duration-in-seconds: 20 # 续约更新时间间隔（默认30秒）
+#        lease-renewal-interval-in-seconds: 10
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://yangrui:123@localhost:8761/eureka
-#    healthcheck:
-#            enabled: true
+    healthcheck:
+            enabled: true
   instance:
      prefer-ip-address: true
      instance-id: ${spring.application.name}:${server.port}}
-     lease-renewal-interval-in-seconds: 10
-     lease-expiration-duration-in-seconds : 60
+     lease-renewal-interval-in-seconds: 20
+     lease-expiration-duration-in-seconds : 10
