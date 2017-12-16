@@ -13,6 +13,8 @@
         <module>microservie-consumer-movice</module>
         <module>miscrservice-discoverye-ureka</module>
         <module>microservie-consumer-movie-feign</module>
+        <module>springapplication</module>
+        <module>spring-intergration</module>
     </modules>
 
     <!--
@@ -43,17 +45,7 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
 
     <dependencies>
 
-        <!--
-            spring-boot-starter-web: MVC,AOP的依赖包....
-         -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <!--
-                <version></version>
-                由于我们在上面指定了 parent(spring boot)
-             -->
-        </dependency>
+
 
         <!-- 添加fastjson 依赖包. -->
         <dependency>
