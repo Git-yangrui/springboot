@@ -15,6 +15,7 @@
         <module>spring-intergration</module>
         <module>miscroservice-eureka-server</module>
         <module>miscroservice-provider-user-service</module>
+		<module>miscroservice-eureka-server-ha</module>
     </modules>
 
     <!--

@@ -14,10 +14,10 @@ eureka:
     service-url:
        defaultZone: http://yangrui:123@localhost:8761/eureka
     healthcheck:
-        enabled: false
-#  server:
-#    enable-self-preservation: false
-#
-#    eviction-interval-timer-in-ms: 4000
+        enabled: true
+  server:
+    enable-self-preservation: false
+
+    eviction-interval-timer-in-ms: 4000
 
 
