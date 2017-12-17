@@ -1,5 +1,5 @@
 server:
-  port: 7904
+  port: 7908
 spring:
   jpa:
     generate-ddl: false
@@ -32,9 +32,9 @@ eureka:
     serviceUrl:
       defaultZone: http://yangrui:123@localhost:8761/eureka
     healthcheck:
-            enabled: true
+            enabled: false
   instance:
      prefer-ip-address: true
      instance-id: ${spring.application.name}:${server.port}}
-     lease-renewal-interval-in-seconds: 20
-     lease-expiration-duration-in-seconds : 10
+#     lease-renewal-interval-in-seconds: 30
+#     lease-expiration-duration-in-seconds : 10

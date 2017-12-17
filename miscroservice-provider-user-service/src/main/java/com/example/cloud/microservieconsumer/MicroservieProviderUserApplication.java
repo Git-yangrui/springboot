@@ -6,9 +6,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class MicroservieProviderApplication {
+public class MicroservieProviderUserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroservieProviderApplication.class, args);
+		SpringApplication.run(MicroservieProviderUserApplication.class, args);
 	}
 }
