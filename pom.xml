@@ -11,10 +11,12 @@
     <modules>
         <module>springboothelloworld</module>
         <module>microservie-consumer-movice</module>
-        <module>miscrservice-discoverye-ureka</module>
+        <module>miscrsevice-provider-user</module>
+        <module>miscroservice-discovery-eureka</module>
         <module>microservie-consumer-movie-feign</module>
         <module>springapplication</module>
         <module>spring-intergration</module>
+        <module>miscroservice-eureka-server</module>
     </modules>
 
     <!--
