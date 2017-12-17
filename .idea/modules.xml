@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservie-consumer-movice/microservie-consumer-movice.iml" filepath="$PROJECT_DIR$/microservie-consumer-movice/microservie-consumer-movice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservie-consumer-movie-feign/microservie-consumer-movice (1).iml" filepath="$PROJECT_DIR$/microservie-consumer-movie-feign/microservie-consumer-movice (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservie-consumer-ribbon/microservie-consumer-ribbon.iml" filepath="$PROJECT_DIR$/microservie-consumer-ribbon/microservie-consumer-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miscroservice-eureka-server/miscroservice-eureka-server.iml" filepath="$PROJECT_DIR$/miscroservice-eureka-server/miscroservice-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miscroservice-eureka-server-ha/miscroservice-eureka-server-ha.iml" filepath="$PROJECT_DIR$/miscroservice-eureka-server-ha/miscroservice-eureka-server-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miscroservice-provider-user-service/miscroservice-provider-user-service.iml" filepath="$PROJECT_DIR$/miscroservice-provider-user-service/miscroservice-provider-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miscrservice-parent/miscrserviceprovider.iml" filepath="$PROJECT_DIR$/miscrservice-parent/miscrserviceprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-intergration/spring-intergration.iml" filepath="$PROJECT_DIR$/spring-intergration/spring-intergration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springapplication/springapplication.iml" filepath="$PROJECT_DIR$/springapplication/springapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot.iml" filepath="$PROJECT_DIR$/springboot.iml" />
+    </modules>
+  </component>
+</project>
