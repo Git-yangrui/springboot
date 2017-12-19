@@ -39,4 +39,6 @@
             </plugin>
         </plugins>
     </build>
+
+    <!--clean install spring-boot:repackage -e-->
 </project>
