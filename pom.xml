@@ -16,6 +16,8 @@
         <module>miscroservice-eureka-server</module>
         <module>miscroservice-provider-user-service</module>
 		<module>miscroservice-eureka-server-ha</module>
+        <module>microservie-consumer-ribbon-hystrix</module>
+        <module>microservie-consumer-movie-feign-with-hystrix</module>
     </modules>
 
     <!--
