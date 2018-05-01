@@ -19,6 +19,7 @@
         <module>microservie-consumer-ribbon-hystrix</module>
         <module>microservie-consumer-movie-feign-with-hystrix</module>
         <module>h2</module>
+        <module>mybatis</module>
     </modules>
 
     <!--
@@ -27,7 +28,7 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.1.RELEASE</version>
+        <version>1.5.8.RELEASE</version>
     </parent>
 
     <dependencyManagement>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.citi.mybatis.UserMapper">
+	<!--<resultMap id="ssdsd" type="com.citi.entities.User" >-->
+		<!--<collection property="" column=""></collection>-->
+
+	<!--</resultMap>-->
+
+	<select id="getAllUser"  resultType="com.citi.entities.User">
+		select * from USER;
+	</select>
+	<!-- 命名空间，可以随意些，只要不冲突 -->
+	<!--&lt;!&ndash; 对象映射 &ndash;&gt;-->
+	<!--<resultMap type="cn.itcast.Person" id="personRM">-->
+		<!--<id property="id" column="ID"/>&lt;!&ndash; property="id" 实体对象的属性；column="id" 结果集字段 &ndash;&gt;-->
+		<!--<result property="userName" column="USER_NAME"/>-->
+		<!--<result property="age" column="AGE"/>-->
+	<!--</resultMap>-->
+	<!---->
+	<!--&lt;!&ndash; 列标签 &ndash;&gt;-->
+	<!--<sql id="cols">-->
+		<!--(id,user_name,age)-->
+	<!--</sql>-->
+	<!---->
+	<!--&lt;!&ndash; 查询所有 resultType设置返回值 &ndash;&gt;-->
+	<!--<select id="findAll" resultMap="personRM">-->
+		<!--&lt;!&ndash;  SQL语句 &ndash;&gt;-->
+		<!--SELECT<include refid="cols"/>FROM person-->
+	<!--</select>-->
+	<!---->
+	<!--&lt;!&ndash; 查询一个对象 &ndash;&gt;-->
+	<!--<select id="get" parameterType="integer" resultMap="personRM">-->
+		<!--SELECT id,user_name,age FROM person-->
+		<!--WHERE id=#{pid}-->
+	<!--</select>-->
+	<!---->
+	<!--&lt;!&ndash; 新增，以实体来封装参数，在sql语句中有参数；隐患sql注入 preparestatement；解决sql注入，通过属性类型判断，如果是整数直接写，如果字符串类型两边加单撇&ndash;&gt;-->
+	<!--<insert id="insert" parameterType="Person">-->
+		<!--INSERT INTO person <include refid="cols"/> VALUES(#{id},#{userName},#{age})-->
+	<!--</insert>-->
+	<!---->
+	<!--&lt;!&ndash; 修改 &ndash;&gt;-->
+	<!--<update id="update" parameterType="cn.itcast.Person">-->
+		<!--UPDATE person set user_name=#{userName},age=#{age}-->
+		<!--WHERE id=#{id}-->
+	<!--</update>-->
+	<!---->
+	<!--&lt;!&ndash; 删除 &ndash;&gt;-->
+	<!--<delete id="deleteById" parameterType="integer">-->
+		<!--DELETE FROM person -->
+		<!--WHERE id=#{xid}-->
+	<!--</delete>-->
+</mapper>
