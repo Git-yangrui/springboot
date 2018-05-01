@@ -1,5 +1,5 @@
 server:
-   port: 7908
+   port: 7909
 spring:
    application:
       name: miscrservice-provider-movie

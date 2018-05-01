@@ -18,6 +18,7 @@
 		<module>miscroservice-eureka-server-ha</module>
         <module>microservie-consumer-ribbon-hystrix</module>
         <module>microservie-consumer-movie-feign-with-hystrix</module>
+        <module>h2</module>
     </modules>
 
     <!--
