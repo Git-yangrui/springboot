@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="angular.js"></script>
+        <!--<script type="text/javascript" src="angular.min.js"></script>-->
+        <script type="text/javascript" src="test.js">
+           
+        </script>
+    </head>
+    <body ng-app="myApp" >
+        <div class="ssss" ng-controller="myCtrl">
+            <h1>aichuang</h1>
+            <form name="myForm" class="">
+                <div>
+                    <div>
+                        <label for="user_name">username</label>
+                    </div>
+                    <div>
+                        <input type="text" id="user_name" ng-model="data.username" name="userName" ng-maxlength="20" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">password</label>
+                    </div>
+                    <div>
+                        <input type="text" id="password" ng-model="data.password" name="passWord" ng-maxlength="20" required>
+                    </div>
+                </div>
+                <div>
+                    <p ng-show="myForm.userName.$pristine && myForm.userName.$invalid ">用户名</p>
+                    <p ng-show="myForm.passWord.$dirty && myForm.passWord.$invalid">密码</p>
+                </div>
+                <div>
+                    <p>验证一下</p>
+                </div>
+                <div>
+                    <button ng-click="sumbit();">tijiao</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

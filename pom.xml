@@ -20,6 +20,7 @@
         <module>microservie-consumer-movie-feign-with-hystrix</module>
         <module>h2</module>
         <module>mybatis</module>
+        <module>springboot-swagger</module>
     </modules>
 
     <!--

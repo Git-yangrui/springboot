@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="angular.js"></script>
+        <!--<script type="text/javascript" src="angular.min.js"></script>-->
+    </head>
+    <body ng-app="myApp" >
+        <h1>{{title}}</h1>
+        <div>TODO write content</div>
+        <!--$dirty  true空
+        $invalid 
+        $valid true 合法   
+        $pristine true 没有输入-->
+        <form name="myForm" ng-controller="myController" class="main">
+            <input ng-model="data.username" type="text" name="userName" required/>
+            <!--必须是输入国-->
+            <span ng-show="myForm.userName.$dirty && myForm.userName.$invalid">用户名是必填的</span>
+            <hr>
+            <input ng-model="data.password" type="text" name="passWord" required/>
+             <span ng-show="myForm.passWord.$dirty && myForm.passWord.$invalid">密码是必填的</span>
+              <hr>
+            <!--<input ng-model="data.description" type="text" name="description" required/>-->
+            <button ng-click="submit()" ng>submit</button>
+        </form>
+        <script type="text/javascript">
+
+            var app = angular.module("myApp", []);
+
+            app.controller("myController", function ($scope) {
+                $scope.submit = function () {
+                     console.log($scope);
+//                    console.log($scope.data.username);
+                }
+
+
+            });
+        </script>
+    </body>
+</html>
